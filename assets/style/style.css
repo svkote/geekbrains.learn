@@ -1,0 +1,107 @@
+/* Глобальные */
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+/* Шапка */
+
+header {
+    background-color: rgb(10, 85, 41);
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+.menu__list {
+    padding: 10px;
+}
+.menu__desc {
+    list-style: none;
+    padding: 0 11px;
+    float: left;
+}
+.menu__link  {
+    font-size: 19px;
+    color: rgb(196, 196, 196);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu__link:hover  {
+    font-size: 19px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.active-menu {
+    color: #ecff86;
+}
+
+/* Товары */
+
+h3.product__title {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.product__mini {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.product__full {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+li.product__list {
+    list-style: none;
+    padding: 5px;
+    font-size: 14px;
+    color: #208c14;
+}
+li.product__list:before {
+    content: "";
+    background: url('/assets/img/makefg.png') 0 50% no-repeat;
+    /* background-color: yellow; */
+    background-size: 15px;
+    list-style-type: none;
+    padding-left: 21px;
+}
+
+input[type="radio"] {
+    margin: 5px 14px;
+}
+
+input[type="checkbox"] {
+    margin: 5px 14px;
+}
+label {
+    cursor: pointer;
+}
+input#name {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+    width: 290px;
+    height: 21px;
+    color: green;
+    font-size: 17px;
+    background-color: #2da2242b;
+}
+
+textarea#bio {
+    border-radius: 20px;
+    padding: 5px;
+    width: 290px;
+    height: 213px;
+    margin: 20px;
+    overflow: hidden;
+    color: green;
+    font-size: 17px;
+    background-color: #2da2242b;
+}
+
