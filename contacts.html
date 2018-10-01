@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Контакты</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 <body>
     <!-- Меню -->
-    <ul>
-        <li><a href="index.html" class="active-menu">Главная</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="reg.html">Регистрация</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-    </ul> <hr>
+    <header>
+        <ul class="menu__list">
+            <li class="menu__desc"><a href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__desc"><a href="contacts.html" class="active-menu menu__link">Контакты</a></li>
+            <li class="menu__desc"><a href="reg.html" class="menu__link">Регистрация</a></li>
+            <li class="menu__desc"><a href="catalog.html" class="menu__link">Каталог</a></li>
+        </ul>
+    </header>
 
     <h1>Наши контакты</h1>  
     <p> Москва, м. Семеновская, ул. Малая Семеновская д.45</p>
@@ -30,10 +33,10 @@
     <p><i>Также мы рады сообщить, что специально для Вас мы готовы сделать вам скидку 30% на наших <a href="/catalog/len.html">Ленивцев</a></i></p> <br>
 
     <form action="index.html" method="POST">
-        <label for="name">Введите ваше имя</label><br>
+        <label for="name"><b>Введите ваше имя</b> </label><br>
         <input type="text" id="name"> <br>
         <br>
-        <label for="bio">Ваше сообщение:</label><br>
+        <label for="bio"><b>Ваше сообщение:</b> </label><br>
         <textarea name="bio" id="bio" cols="30" rows="3"></textarea> <br>
         <br>
         <input type="submit" value="Отправить"> <input type="reset" value="Я передумал">
