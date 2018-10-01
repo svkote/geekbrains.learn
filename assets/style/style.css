@@ -82,6 +82,9 @@ input[type="checkbox"] {
 label {
     cursor: pointer;
 }
+label:hover {
+    color: #66ab1c;
+}
 input#name {
     border-radius: 20px;
     padding: 5px;
