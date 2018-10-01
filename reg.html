@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+</head>
+<body>
+    <!-- Меню -->
+    <ul>
+        <li><a href="index.html" class="active-menu">Главная</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="reg.html">Регистрация</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+    </ul> <hr>
+
+    <h1>Регистрация</h1>
+    <!-- Форма -->
+
+    <form action="index.html" method="POST">
+        <label for="name">Введите ваше имя</label><br>
+        <input type="text" id="name"> <br>
+        <br>
+
+
+        <label for="name">Ваш пол</label><br>
+        <input type="radio" id="sex1" name="sex"><label for="sex1">Женский</label> <br>
+        <input type="radio" id="sex2" name="sex"><label for="sex2">Мужской</label> <br>
+        <input type="radio" id="sex3" name="sex"><label for="sex3" checked>Не определился</label> 
+        <br>
+        <br>
+
+        Какой вид спама от нас вы готовы получать?<br>
+        <input type="checkbox" id="val1">
+        <label for="val1">О животных</label><br>
+
+        <input type="checkbox" id="val2">
+        <label for="val2">О новых поставках</label><br>
+
+        <input type="checkbox" id="val3">
+        <label for="val3">О скидках</label><br>
+
+        <input type="checkbox" id="val4" checked>
+        <label for="val4">Я хочу получать весь спам!</label><br>
+        <br>
+        <br>
+
+        <label for="bio">Расскажите о себе:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="3"></textarea> <br>
+        <br>
+        <input type="submit" value="Отправить"> <input type="reset" value="Я передумал">
+    </form>
+    <br>
+    <!-- Футер -->
+    <hr>
+    <p>&copy; <i>Животных в каждый дом 2006-2018 <br>
+        Все права защищены.</i> </p>
+</body>
+</html>
