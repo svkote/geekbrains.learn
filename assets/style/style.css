@@ -6,6 +6,11 @@ body {
 p {
     padding: 4px 30px;
 }
+h1, h3, h4, h2 {
+    text-align: center;
+}
+
+/* Формы, инпуты */
 input[type="radio"] {
     margin: 5px 14px;
 }
@@ -15,12 +20,6 @@ input[type="checkbox"] {
 }
 label {
     cursor: pointer;
-}
-
-img {
-    border-radius: 13px;
-    border: 1px solid black;
-    margin: 0 10px;
 }
 input[type="submit"] {
     background-color: #53bb2f;
@@ -42,26 +41,119 @@ input[type="reset"]:hover, input[type="submit"]:hover {
     background-color: #4bd8c33b;
     transition: all 1s ease;
 }
-h1, h3, h4, h2 {
-    text-align: center;
+input#name, input#mail {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+    width: 290px;
+    height: 21px;
+    color: green;
+    font-size: 17px;
+    background-color: #2da2242b;
+    text-transform: capitalize;
 }
+
+input#mail:focus {
+    color: rgb(0, 0, 0);
+    background-color: #b6ae672b;
+}
+
+textarea#bio {
+    border-radius: 20px;
+    padding: 5px;
+    width: 290px;
+    height: 213px;
+    margin: 20px;
+    overflow: hidden;
+    color: green;
+    font-size: 17px;
+    background-color: #2da2242b;
+    text-transform: capitalize;
+}
+form {
+    margin: 0 30px;
+    border: 1px solid black;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 13px;
+}
+.contact__block {
+    border: 1px solid black;
+    border-radius: 13px;
+    width: fit-content;
+    margin: 0 30px;
+    transition: all 1s ease;
+}
+.contact__block:hover {
+    background-color: #9acd324f;
+    transition: all 1s ease;
+}
+
+.form_info {
+    border: 1px solid black;
+    border-radius: 13px;
+    margin: 0 30px 10px;
+    width: 390px;
+    padding: 0;
+}
+
+
+/* Картинки */
+.img {
+    border-radius: 13px;
+    border: 1px solid black;
+    margin: 0 10px;  
+    box-sizing: border-box;
+}
+.img:hover {
+    border-radius: 13px;
+    border: none;  
+    padding: 1px;
+}
+.slaid {
+    width: 100%;
+    opacity: 0.4;
+    transition: all 1s ease;
+    z-index: 51;
+}
+.slaid:hover {
+    width: 100%;
+    opacity: 1;
+    transition: all 1s ease;
+}
+.logo {
+    display: inline-block;
+    padding: 6px 26px;
+    transition: all 1s ease;
+}
+
+
+
 /* Шапка */
 
 header {
-    background-color: rgb(10, 85, 41);
+    background-color: rgba(46, 128, 80, 0.86);
     width: 100%;
-    padding: 10px;
+    padding: 0 0 8px;
     margin: 0;
     position: sticky;
     top: 0;
+    height: 45px;
+    z-index: 100;
 }
-.menu__list {
-    padding: 10px;
+
+
+ul.menu__list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: right;
+    padding-top: 14px;
 }
 .menu__desc {
     list-style: none;
     padding: 0 11px;
-    float: left;
+    display: inline-block;
 }
 .menu__link  {
     font-size: 19px;
@@ -69,6 +161,7 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     transition: all 1s ease;
+    font-family: 'Neucha', cursive;
 }
 .menu__link:hover  {
     font-size: 19px;
@@ -77,7 +170,10 @@ header {
     transition: all 1s ease;
 }
 .active-menu {
-    color: #ecff86;
+    color: #e4f38dc9;
+}
+a.active-menu:before {
+    content: " > ";
 }
 
 /* Товары */
@@ -111,33 +207,9 @@ li.product__list {
 li.product__list:before {
     content: "";
     background: url('../../assets/img/makefg.png') 0 50% no-repeat;
-    /* background-color: yellow; */
     background-size: 15px;
     list-style-type: none;
     padding-left: 21px;
-}
-
-input#name {
-    border-radius: 20px;
-    padding: 5px;
-    margin: 20px;
-    width: 290px;
-    height: 21px;
-    color: green;
-    font-size: 17px;
-    background-color: #2da2242b;
-}
-
-textarea#bio {
-    border-radius: 20px;
-    padding: 5px;
-    width: 290px;
-    height: 213px;
-    margin: 20px;
-    overflow: hidden;
-    color: green;
-    font-size: 17px;
-    background-color: #2da2242b;
 }
 
 .product__price {
@@ -146,32 +218,18 @@ textarea#bio {
     font-weight: 900;
 }
 
-form {
-    margin: 0 30px;
-    border: 1px solid black;
-    padding: 20px;
-    width: fit-content;
-    border-radius: 13px;
-}
-.contact__block {
-    border: 1px solid black;
-    border-radius: 13px;
-    width: fit-content;
-    margin: 0 30px;
-    transition: all 1s ease;
-}
-.contact__block:hover {
-    background-color: #9acd324f;
-    transition: all 1s ease;
+.product__mini::first-letter, .product__full::first-letter {
+    color: rgba(46, 128, 80, 0.86);
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+    padding: 0 2px 0 15px;
 }
 
-.form_info {
-    border: 1px solid black;
-    border-radius: 13px;
-    margin: 0 30px 10px;
-    width: 390px;
-    padding: 0;
-}
+
+
+
+
+/*  кнопка наверх */
 .toUp {
     border: none;
     width: 40px;
@@ -186,13 +244,36 @@ form {
     opacity: 1;
     transition: all 1s ease;
 }
+
+
+
 /* футер */
 footer {
-    background-color: #0a5529;
+    background-color: rgba(46, 128, 80, 0.86);
     width: 100%;
     bottom: 0;
     color: #c4c1a1;
 }
 footer p {
     margin-bottom: 0;
+}
+
+
+
+/* таблицы */
+.table td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.table thead {
+    font-weight: 900;
+    text-align: center;
+    background-color: rgba(247, 255, 176, 0.671);
 }

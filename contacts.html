@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Контакты</title>
     <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <!-- Меню -->
     <header>
+        <div class="logo">
+            <img src="assets/img/logo2.png" alt="1" width="70px">
+        </div>
         <ul class="menu__list">
             <li class="menu__desc"><a href="index.html" class="menu__link">Главная</a></li>
             <li class="menu__desc"><a href="contacts.html" class="active-menu menu__link">Контакты</a></li>
@@ -39,6 +44,8 @@
     <form action="index.html" method="POST">
         <label for="name"><b>Введите ваше имя</b> </label><br>
         <input type="text" id="name"> <br>
+        <label for="mail"><b>Введите ваш email</b> </label><br>
+        <input type="email" id="mail"> <br>
         <br>
         <label for="bio"><b>Ваше сообщение:</b> </label><br>
         <textarea name="bio" id="bio" cols="30" rows="3"></textarea> <br>
