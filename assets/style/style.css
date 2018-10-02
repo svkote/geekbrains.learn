@@ -3,7 +3,48 @@ body {
     background-color: #f8f8f8;
     margin: 0;
 }
+p {
+    padding: 4px 30px;
+}
+input[type="radio"] {
+    margin: 5px 14px;
+}
 
+input[type="checkbox"] {
+    margin: 5px 14px;
+}
+label {
+    cursor: pointer;
+}
+
+img {
+    border-radius: 13px;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+input[type="submit"] {
+    background-color: #53bb2f;
+    padding: 5px 20px;
+    border-radius: 13px;
+    font-weight: 900;
+    font-size: 15px;
+    transition: all 1s ease;
+}
+input[type="reset"] {
+    background-color: #d8574bc9;
+    padding: 5px 20px;
+    border-radius: 13px;
+    font-weight: 900;
+    font-size: 15px;
+    transition: all 1s ease;
+}
+input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: #4bd8c33b;
+    transition: all 1s ease;
+}
+h1, h3, h4, h2 {
+    text-align: center;
+}
 /* Шапка */
 
 header {
@@ -11,6 +52,8 @@ header {
     width: 100%;
     padding: 10px;
     margin: 0;
+    position: sticky;
+    top: 0;
 }
 .menu__list {
     padding: 10px;
@@ -25,11 +68,13 @@ header {
     color: rgb(196, 196, 196);
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 1s ease;
 }
 .menu__link:hover  {
     font-size: 19px;
     color: #ffffff;
     text-decoration: underline;
+    transition: all 1s ease;
 }
 .active-menu {
     color: #ecff86;
@@ -65,23 +110,13 @@ li.product__list {
 }
 li.product__list:before {
     content: "";
-    background: url('/assets/img/makefg.png') 0 50% no-repeat;
+    background: url('../../assets/img/makefg.png') 0 50% no-repeat;
     /* background-color: yellow; */
     background-size: 15px;
     list-style-type: none;
     padding-left: 21px;
 }
 
-input[type="radio"] {
-    margin: 5px 14px;
-}
-
-input[type="checkbox"] {
-    margin: 5px 14px;
-}
-label {
-    cursor: pointer;
-}
 input#name {
     border-radius: 20px;
     padding: 5px;
@@ -105,3 +140,59 @@ textarea#bio {
     background-color: #2da2242b;
 }
 
+.product__price {
+    font-size: 25px;
+    color: #1a8064;
+    font-weight: 900;
+}
+
+form {
+    margin: 0 30px;
+    border: 1px solid black;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 13px;
+}
+.contact__block {
+    border: 1px solid black;
+    border-radius: 13px;
+    width: fit-content;
+    margin: 0 30px;
+    transition: all 1s ease;
+}
+.contact__block:hover {
+    background-color: #9acd324f;
+    transition: all 1s ease;
+}
+
+.form_info {
+    border: 1px solid black;
+    border-radius: 13px;
+    margin: 0 30px 10px;
+    width: 390px;
+    padding: 0;
+}
+.toUp {
+    border: none;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+    opacity: 0.5;
+    transition: all 1s ease;
+}
+.toUp:hover {
+    opacity: 1;
+    transition: all 1s ease;
+}
+/* футер */
+footer {
+    background-color: #0a5529;
+    width: 100%;
+    bottom: 0;
+    color: #c4c1a1;
+}
+footer p {
+    margin-bottom: 0;
+}
